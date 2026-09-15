@@ -1,12 +1,12 @@
 {
   "stack": "heroku-24",
   "addons": [
-    "heroku-postgresql:in-dyno"
+   "heroku-postgresql:essential-0"
   ],
   "environments": {
     "review": {
       "addons": [
-        "heroku-postgresql:in-dyno"
+        "heroku-postgresql:essential-0"
       ],
       "scripts": {
         "postdeploy": "bundle exec rails db:schema:load"
